@@ -24,3 +24,11 @@ script:
 branches:
   only:
     - master
+deploy:
+  provider: heroku
+  app: egc-m4-jorandmol
+  strategy: git
+  api_key:
+    secure: Q7iPwp+sT+4LjaVnWSvyW3dqxZAdFUvFy00r+N3nVb2ji6wSVbQR2jEjAbTBeB8ZJMcgaMe3TCTUR9fItF684SsjSxFh2652quc1daoCSRslAc+n2jSRFfLeXsGgUfgYtdWu6EFcm3wrYQMNOOdx3qriULl1Vb4PcEI9Cz9jiGZAsshVcGgBIxpa5pwFFAmRdA7qf5yo9G8l1YBePiYp7nMsqNFHBsnxpZg05udpNd2vRp7bvgF8rXjXyv3KLHEjQgwQb0h2KDQjh9mR927ljmTb260qvyH4Clb1pOBEsufwzlUopKEf+ba9zo4vOgKLI33yOUsSB0Bkv6VbP6Rf4D+AIh5PbkoWP9Et5TI6NMs/Yt/mdcMn3Syu3Z5bxNmB8Wn+zE7TWGPdLnonx3MMbQQH5W6qIc5aC/bQtZPEiOkrHS576cZbiUnkytZgtQZZLiRNNjXYwCgG/ynDqu+2rPiKo68bSIcpWXMkAzM6QU/3UkTwv8na6SoMIgzzDOZntcP3HwWpY+6hZdTGohAuExJUlgUmUS1MFZim6qg/PfHPXDKtzfl0iB+IgxT529GF4VagkGm/xQ8uX7RrRAvVkLmtoCfyWqqkUi7hZLZDX1ZGjp0jasaBhZ3NIzQl6xrAIC8bnotzz7SDoOP2CLlSqTERUvxVLMBB8jQaae8dl5s=
+  on:
+    branch: master
